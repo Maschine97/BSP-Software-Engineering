@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    position:relative;
+    min-height: 100%;
+    max-width: 100%;
+}
+
+body {
+    background-color: #22254B;
+    font-family: 'Signika Negative', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #373b69;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem 1.5rem 3rem;
+}
+
+.logo > a {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+h1 {
+    margin: 0;
+    padding-top: 5px;
+    color: #7378C5;
+    font-size: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #7378C5;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #7378C5;
+}
+
+a:active {
+  text-decoration: none;
+  color: #7378C5;
+}
+
+a::after {
+  text-decoration: none;
+  color: #7378C5;
+}
+
+#search {
+    background-color: transparent;
+    border: 2px solid #22254B;
+    border-radius: 30px;
+    color: #FFF;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+#search::placeholder {
+    color: #7378C5;
+}
+
+#search:focus {
+  background-color: #22254B;
+  outline: none;
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 12px 12px 12px 12px;
+}
+
+.movie {
+    background-color: #373b69;
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    margin: 1rem;
+    width: 300px;
+}
+
+.movie img {
+    width: 100%;
+}
+
+.movieInfo {
+    color: #EEE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.movieInfo h3 {
+    margin: 0;
+}
+
+.movieInfo span {
+    background-color: #22254B;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+}
+
+.movieInfo span.green {
+    color: rgb(39, 189, 39);
+}
+
+.movieInfo span.orange {
+    color: orange;
+}
+
+.movieInfo span.red {
+    color: red;
+}
+
+.overview {
+  background-color: #7378C5;
+  color: #22254B;
+  padding: 2rem;
+  position: absolute;
+  max-height: 100%;
+  overflow: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateY(101%);
+  transition: transform 0.35s ease-in;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #373b69;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7378C5;
+}
+
+.overview::-webkit-scrollbar-track {
+  background: #7378C5;
+}
+
+.overview::-webkit-scrollbar-thumb {
+  background: #373b69;
+}
+
+#overview {
+  margin-top: 0;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+}
+
+#mail {
+  margin: 0px 48px 132px 48px;
+  padding: 15px 0px 20px 0px;
+  background-color: #373b69;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+#mail > h3 {
+  display: flex;
+  justify-content: center;
+  color: #7378C5;
+  margin-top: 20px;
+  font-size: 2.5rem;
+}
+
+#mail > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0px 10px 0px 5px;
+}
+
+#studmail {
+  border: 2px solid #7378C5;
+  border-radius: 30px;
+  padding: 8px;
+  margin: 5px 35px 15px 35px;
+}
+
+#studmail:hover {
+  border: 2px solid #EEE;
+  color: #EEE;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #373b69;
+    color: #7378C5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+}
+
+footer > div > div > p {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+footer > div > div > h4 {
+    margin-bottom: 0;
+}
+
+footer > div > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
