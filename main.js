@@ -71,3 +71,48 @@ form.addEventListener("submit", (e) => {
     search.value = "";
   }
 })
+
+const contacts = [
+  {name: "Teresa",        mail: "teresa.brehm@student.businessschool-berlin.de"},
+  {name: "Maurice",       mail: "maurice.carlen@student.businessschool-berlin.de"},
+  {name: "Moritz",        mail: "m-m.carrescia@student.businessschool-berlin.de"},
+  {name: "Christian D.",  mail: "christian.dicks@student.businessschool-berlin.de"},
+  {name: "Vincent",       mail: "vincent.froenicke@student.businessschool-berlin.de"},
+  {name: "Freya",         mail: "f-e.goehler@student.businessschool-berlin.de"},
+  {name: "Johann",        mail: "johann.heinken@student.businessschool-berlin.de"},
+  {name: "Issa",          mail: "daniel-issa.kodjovi@student.businessschool-berlin.de"},
+  {name: "Lennart",       mail: "lennart.laugisch@student.businessschool-berlin.de"},
+  {name: "Christian M.",  mail: "teresa.brehm@student.businessschool-berlin.de"},
+  {name: "Florentine",    mail: "f-e.maerz@student.businessschool-berlin.de"},
+  {name: "Henrik",        mail: "henrik.mumm@student.businessschool-berlin.de"},
+  {name: "Philipp",       mail: "p-j.nehlsen@student.businessschool-berlin.de"},
+  {name: "Klaas",         mail: "klaas-malte.nehus@student.businessschool-berlin.de"},
+  {name: "Ilana",         mail: "ilana.neustadt@student.businessschool-berlin.de"},
+  {name: "Ibrahim",       mail: "ibrahim.oezdemir@student.businessschool-berlin.de"},
+  {name: "Sophie",        mail: "s-m-c-u.pass@student.businessschool-berlin.de"},
+  {name: "Niklas",        mail: "n-j.sawitzki@student.businessschool-berlin.de"},
+  {name: "Linus",         mail: "linus-daniel.scheibe@student.businessschool-berlin.de"},
+  {name: "Danin",         mail: "danin.shayesteh@student.businessschool-berlin.de"},
+  {name: "Constantin",    mail: "c.steingraeber@student.businessschool-berlin.de"},
+  {name: "Lukas",         mail: "l-f.theel@student.businessschool-berlin.de"},
+  {name: "Anne",          mail: "anne.ullrich@student.businessschool-berlin.de"},
+]
+
+const section = document.getElementById("contacts");
+
+function findContacts(contacts) {
+      section.innerHTML = "";
+      contacts.forEach((contacts) => {
+        const { name, mail } = contacts;
+
+        const contactsEl = document.createElement("span");
+        contactsEl.classList.add("contacts");
+
+        contactsEl.innerHTML = `<a href="mailto:${mail}">${name}</a>`;
+
+        section.appendChild(contactsEl);
+        }
+      );
+}
+
+findContacts(contacts);

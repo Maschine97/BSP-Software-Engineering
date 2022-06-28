@@ -199,15 +199,18 @@ a::after {
   margin: 0px 10px 0px 5px;
 }
 
-#studmail {
+.contacts {
   border: 2px solid #7378C5;
   border-radius: 30px;
   padding: 8px;
   margin: 5px 35px 15px 35px;
 }
 
-#studmail:hover {
-  border: 2px solid #EEE;
+.contacts:hover {
+    border: 2px solid #EEE;
+}
+
+.contacts:hover * {
   color: #EEE;
 }
 
